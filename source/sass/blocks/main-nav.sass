@@ -21,6 +21,7 @@
     &:hover,
     &:active
         background-color: #624530
+
 .main-nav--closed
     & .main-nav__toggle:before
         content: ""
@@ -34,13 +35,42 @@
         background-color: #ffffff
         box-shadow: 0px 8px 0px 0px #ffffff, 0 16px 0 0 #ffffff
 
+    & .main-nav__toggle:active::before
+        top: 16px
+        background-color: #917d6e
+        box-shadow: 0px 9px 0px 0px #917d6e, 0px 17px 0px 0px #917d6e
+
+.main-nav--open .main-nav__toggle
+    top: 0
+    right: auto
+    left: 0
+    &:before,
+    &:after
+        content: ""
+
+        position: absolute
+        top: 24px
+        left: 18px
+        width: 36px
+        height: 2px
+        background-color: #ffffff
+    &:before
+        transform: rotate(45deg)
+    &:after
+        transform: rotate(-45deg)
+    &:active:before,
+    &:active:after
+        background-color: #8e796a
+
 
 .main-nav__list
 
     list-style: none
     margin: 0
     padding: 0
-.site-list__item
+
+
+
 
 
 
@@ -69,3 +99,19 @@
         width: 780px
     .user-list
         width: 160px
+
+.site-list
+    font-weight: bold
+
+.site-list a
+    display: block
+    padding: 12px 21px 13px 21px
+
+    font-size: 18px
+    line-height: 24px
+    color: #ffffff
+    text-decoration: none
+    text-transform: uppercase
+    background-color: #826550
+    border-top: 1px solid #886e5b
+    border-bottom: 1px solid #71543f
