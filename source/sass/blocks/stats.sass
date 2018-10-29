@@ -1,5 +1,27 @@
+.stats
+    width: 320px
+    margin: 0 auto
+
 .stats__header
-    @include REDoutline
+    @include Blueoutline
+    padding: 30px 40px 25px 40px
 
 .stats__list
-    @include REDoutline
+    @include Blueoutline
+    width: 100%
+
+@media (min-width: $tablet-width)
+    .stats
+        width: 640px
+        margin-top: -185px
+    .stats__list
+        display: flex
+@media (min-width: $desktop-width)
+    .stats
+        display: flex
+        width: 960px
+        margin-top: -160px
+        &__header
+            width: 320px
+        &__list
+            width: 640px
