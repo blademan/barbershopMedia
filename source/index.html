@@ -16,7 +16,11 @@
     <!-- Header -->
 <header class="page-header">
     <a href="" class="page-header__logo">
-        <img src="img/logotype-mobile.svg" alt="" class="page-header__logo-image">
+       <picture>
+       <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+       <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" alt="Barbershop Logo" class="page-header__logo-image" width="226" height="30">
+        </picture>
     </a>
     <div class="test"></div>
 
