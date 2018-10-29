@@ -25,6 +25,11 @@
         order: 2
         height: 400px
         width: 100%
+
+        background-color: #000000
+        background-image: url("/img/bg-header-tablet.jpg")
+        background-repeat: no-repeat
+        background-position: center -9px
         & img
             display: block
             width: 370px
@@ -33,19 +38,17 @@
             margin-top: 40px
 
 
-        background-color: #000000
-        background-image: url("/img/bg-header-tablet.jpg")
-        background-repeat: no-repeat
-        background-position: center -9px
-
 
 @media (min-width: $desktop-width)
     .page-header__logo
-        height: 640px
+        height: 648px
         background-color: #000000
         background-image: url("/img/bg-header-desktop.jpg")
-        background-repeat: no-repeat
-        background-position: center
+        background-size: cover
+        background-position: center 0
+
         & img
+            margin-top: 57px
+
 
 
