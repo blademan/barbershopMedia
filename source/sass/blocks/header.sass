@@ -1,22 +1,25 @@
 @import "config/variables.sass"
-
+@import "config/mixin.sass"
 
 .page-header
     display: flex
     flex-direction: column
+    @include REDoutline
 
 
 .page-header__logo
     height: 85px
+    @include REDoutline
 
 
 @media (min-width: $tablet-width)
     .page-header__logo
         order: 2
         height: 400px
+        @include REDoutline
 
 
 @media (min-width: $desktop-width)
     .page-header__logo
-        height: 400px
+        height: 640px
 
