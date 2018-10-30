@@ -2,20 +2,77 @@
     width: 320px
     margin: 0 auto
 
+
 .stats__header
-
     padding: 30px 40px 25px 40px
+    background-color: #ffffff
+    color: #000000
 
+.stats__slogan
+    margin-bottom: 15px
+    text-align: center
+    display: block
+    font-size: 22px
+    font-weight: bold
+    line-height: 28px
+    text-transform: uppercase
+
+
+.stats__intro
+    margin: 0
+    text-align: center
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+
+.stats__legend--top
+    display: none
+
+.stats__legend
+    margin-top: 40px
+    opacity: 0.3
+    color: #ffffff
+    font-family: "PT Sans - Narrow"
+    font-size: 20px
+    font-weight: 400
+    line-height: 27px
 .stats__list
 
     width: 100%
 
+.stats--dark
+    background-color: #404040
+
+.stats--light
+    background-color: #4e4e4e
+
+.stats--darken
+    background-color: #353535
+
+.stats__value
+    font-size: 40px
+    font-weight: 400
+    line-height: 18px
+    padding-top: 23px
+    padding-left: 21px
+    padding-bottom: 23px
+.stats__field
+    text-align: right
+    padding-right: 21px
+    font-size: 18px
+    font-weight: 400
+    line-height: 18px
 @media (min-width: $tablet-width)
+    .stats__header
+
+
     .stats
+        z-index: 99999
         width: 640px
         margin-top: -185px
     .stats__list
         display: flex
+
 @media (min-width: $desktop-width)
     .stats
         display: flex
