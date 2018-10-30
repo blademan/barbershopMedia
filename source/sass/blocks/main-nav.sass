@@ -265,13 +265,63 @@
         top: 26px
         left: 30px
         path
-            fill: #ffffff
+            fill: #4c4c4c
 
 
 
 @media (min-width: $desktop-width)
+    .site-list__item
 
+        margin-right: 0
+        &--active:after
+            right: 28px
+            left: 28px
+    .site-list__item a[href]
+        &:hover
+            color: #000000
+            background-color: #ffffff
+        &:active
+            color: rgba(0, 0, 0, 0.3)
+
+            background-color: #ffffff
+            opacity: 1
+
+    .site-list__item a
+        padding-left: 28px
+        padding-right: 28px
+        font-size: 18px
     .site-list
         width: 780px
+
     .user-list
         width: 160px
+
+    .user-list__login
+        position: relative
+        top: 13px
+        width: auto
+        height: auto
+
+        padding-left: 50px
+        padding-right: 30px
+        padding-top: 27px
+        padding-bottom: 24px
+        font-size: 18px
+        line-height: 24px
+        font-weight: bold
+        text-transform: uppercase
+        &:hover
+            color: #000000
+            background-color: #ffffff
+        &:active
+            color: rgba(0, 0, 0, 0.3)
+            background-color: #ffffff
+        &:hover .user-list__login-icon
+            path
+                fill: #000000
+        &:active .user-list__login-icon
+            opacity: 0.2
+
+    .user-list__login-icon
+        left: 15px
+        top: 27px
