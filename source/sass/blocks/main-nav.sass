@@ -174,12 +174,14 @@
     padding: 12px 0px 13px 45px
     display: block
     background-color: #6a4d38
+
 .user-list__login
     color: #ffffff
     text-decoration: none
     font-size: 18px
     font-weight: 400
     line-height: 24px
+
 .user-list__login-icon
     position: absolute
     top: 16px
@@ -194,14 +196,78 @@
 
 
 @media (min-width: $tablet-width)
+    .main-nav__toggle
+        display: none
+
+    .main-nav
+        background-color: #000000
     .site-list
         width: 570px
         display: flex
-        justify-content: space-between
         flex-wrap: wrap
+        justify-content: flex-start
+
+    .site-list__item
+        margin-right: 20px
+
+        &:last-child
+            margin-right: 0
+
+        &--active
+            position: relative
+
+            &:after
+                content: ""
+
+                position: absolute
+                right: 0
+                bottom: -3px
+                left: 0
+
+                height: 3px
+                background-color: #826550
+
+    .site-list__item a
+        margin: 0
+        padding: 0
+        padding-top: 25px
+        padding-bottom: 23px
+        background: none
+        border: none
+        font-size: 17px
+
+    .site-list__item a[href]
+        &:hover
+            color: #826550
+            background-color: #000000
+        &:active
+            color: #ffffff
+
+            background-color: #000000
+            opacity: 0.3
+
 
     .user-list
         width: 60px
+        background: none
+
+    .user-list__login
+        width: 60px
+        height: 70px
+        padding: 0
+        font-size: 0
+        &:hover .user-list__login-icon
+            opacity: 1
+            path
+                fill: #826550
+
+    .user-list__login-icon
+        top: 26px
+        left: 30px
+        path
+            fill: #ffffff
+
+
 
 @media (min-width: $desktop-width)
 
